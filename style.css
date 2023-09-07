@@ -297,14 +297,13 @@ li a:hover{
     .blue-section h4 {
         padding-top: 10px;
         font-size: 12px;
-        left: 60px;
+        left:60px;
     }
 
     .buy-art-btn {
         left: 60px;
     }
 }
-
 
 @media (max-width: 375px) {
     .bg-image-section {
@@ -319,10 +318,12 @@ li a:hover{
     .blue-section h4 {
         padding-top: 10px;
         font-size: 12px;
+        top: 405px;
         left: 30px;
     }
 
     .buy-art-btn {
+        top: 450px;
         left: 30px;
     }
 }
