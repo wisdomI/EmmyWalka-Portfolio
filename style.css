@@ -1,0 +1,350 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap');
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Jura', sans-serif;
+}
+
+/* Navigation Styling */
+
+/* _______________________*/
+.nav {
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 100px;
+}
+
+.flex {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primary-navigation {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    font-weight: 900;
+    color: black;
+}
+li a:hover{
+    color: #0247CF;
+}
+
+.primary-navigation a {
+    text-decoration: none;
+}
+
+/* Main Home Page Styling */
+.bg-image-section {
+    position: absolute;
+    top: 19.4vh;
+    right: 5rem;
+}
+
+.bg-image-section img {
+    height: 80vh;
+}
+
+.white-section {
+    height: 50vh;
+}
+
+.white-section h1 {
+    /* padding: 15rem 0 0 3rem; */
+    font-family: 'Architects Daughter', cursive;
+    font-size: 80px;
+    color: #0247CF;
+
+    position: absolute;
+    bottom: 40vh;
+    left: 100px;
+}
+
+.blue-section {
+    background-color: #0247CF;
+    height: 38vh;
+}
+
+.blue-section h4 {
+    /* padding: 15px 0 0 30px; */
+    position: absolute;
+    bottom: 33vh;
+    left: 100px;
+
+    color: white;
+}
+
+.buy-art-btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    position: absolute;
+    bottom: 25vh;
+    left: 100px;
+
+    cursor: pointer;
+
+}
+
+.pop-up-wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up {
+    height: 20rem;
+    width: 25rem;
+
+    background: #0247CF;
+    color: white;
+    border-radius: 15px;
+    gap: 20px;
+    box-shadow: 1px 1px 50px black;
+
+
+    transform: translateX(0%);
+    transition: transform 350ms ease-in;
+}
+
+.pop-up-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-container {
+    display: flex;
+
+    justify-content: end;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.pop-up-close-btn {
+    border: none;
+    background: transparent;
+}
+
+.pop-up-close-btn img{
+    height: auto;
+    width: auto;
+}
+
+.market-place {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.market-place a {
+    text-decoration: none;
+}
+
+.pocket {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 50px;
+    background: white;
+    color: #0247CF;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 0 0 5px;
+    box-shadow: 1px 1px 3px white;
+}
+
+.pocket:hover {
+    color: white;
+    background: #0247CF;
+    border: 1px solid white;
+}
+
+.foundation img{
+    height: 25px;
+    width: 40px;
+}
+
+.objkt img {
+    height: 25px;
+    width: 60px;
+}
+
+.rarible img {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Media Query */
+@media (max-width: 870px) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: transparent;
+
+        flex-direction: column;
+        padding: min(15vh, 5rem) 2em;
+
+        background: hsla(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(1rem);
+
+        gap: 1.8rem;
+        z-index: 1000;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(./images/close.png);
+        background-repeat: no-repeat;
+    }
+    .mobile-nav-toggle[aria-expanded="false"] {
+        background-image: url(./images/Vector.png);
+        background-repeat: no-repeat;
+    }
+    
+    @supports (backdrop-filterblur(1rem)) {
+        .primary-navigation{
+            background: hsl(0 0% 100% / 0.1);
+            backdrop-filter: blur(1rem);
+        }
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+
+        border: none;
+        width: 1rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        background-color: transparent;
+
+        z-index: 9999;
+    }
+
+    .bg-image-section {
+        right: 1rem;
+    }
+
+    .white-section h1{
+        font-size: 50px;
+    }
+
+    .blue-section h4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .bg-image-section {
+        right: .5rem;
+    }
+
+    .white-section h1{
+        font-size: 50px;
+        left: 60px;
+    }
+
+    .blue-section h4 {
+        padding-top: 10px;
+        font-size: 12px;
+        left: 60px;
+    }
+
+    .buy-art-btn {
+        left: 60px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .bg-image-section {
+        right: .5rem;
+    }
+
+    .white-section h1{
+        font-size: 50px;
+        left: 30px;
+    }
+
+    .blue-section h4 {
+        padding-top: 10px;
+        font-size: 12px;
+        left: 30px;
+    }
+
+    .buy-art-btn {
+        left: 30px;
+    }
+}
+
+@media (max-width: 330px) {
+    .bg-image-section {
+        right: .3rem;
+    }
+
+    .white-section h1{
+        font-size: 40px;
+        left: 20px;
+    }
+
+    .blue-section h4 {
+        padding-top: 10px;
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .buy-art-btn {
+        left: 20px;
+    }
+
+}

@@ -1,0 +1,68 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap');
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Jura', sans-serif;
+}
+
+/* .carousel {
+    display: flex;
+    align-items: center;
+} */
+
+.swiper img {
+   height: 400px;
+   width: 100vw;
+}
+
+.art-images {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+    margin: 100px 0;
+}
+
+.art {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.art div p {
+    color: #0247CF;
+}
+
+.art img {
+    width: 350px;
+    aspect-ratio: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+footer h4 a{
+    text-decoration: none;
+    color: #0247CF;
+}
+
+@media (max-width: 375px) {
+    .art img{
+        width: 300px;
+        height: 300px;
+    }
+}
