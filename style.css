@@ -227,8 +227,8 @@ li a:hover{
         flex-direction: column;
         padding: min(15vh, 5rem) 2em;
 
-        background: hsla(0, 0%, 100%, 0.1);
-        backdrop-filter: blur(1rem);
+        background: white;
+        backdrop-filter: blur(5rem);
 
         gap: 1.8rem;
         z-index: 1000;
@@ -246,10 +246,20 @@ li a:hover{
         background-repeat: no-repeat;
     }
     
+    .active a {
+        color: #0247CF;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .active a:hover{
+        color: #0247CF;
+    }
+
     @supports (backdrop-filterblur(1rem)) {
         .primary-navigation{
-            background: hsl(0 0% 100% / 0.1);
-            backdrop-filter: blur(1rem);
+            background: #0247CF;
+            backdrop-filter: blur(5rem);    
         }
     }
 
@@ -318,12 +328,12 @@ li a:hover{
     .blue-section h4 {
         padding-top: 10px;
         font-size: 12px;
-        top: 405px;
+        top: 555px;
         left: 30px;
     }
 
     .buy-art-btn {
-        top: 450px;
+        top: 600px;
         left: 30px;
     }
 }
