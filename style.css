@@ -315,7 +315,7 @@ li a:hover{
     }
 }
 
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
     .bg-image-section {
         right: .5rem;
     }
@@ -337,7 +337,9 @@ li a:hover{
         left: 30px;
     }
 }
- */
+
+
+
 @media (max-width: 330px) {
     .bg-image-section {
         right: .3rem;
