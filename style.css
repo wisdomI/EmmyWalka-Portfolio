@@ -351,10 +351,12 @@ li a:hover{
     .blue-section h4 {
         padding-top: 10px;
         font-size: 10px;
+        top: 700px;
         left: 20px;
     }
 
     .buy-art-btn {
+        top: 755px;
         left: 20px;
     }
 
