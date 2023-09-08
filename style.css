@@ -315,7 +315,7 @@ li a:hover{
         left: 30px;
     }
 
-    .blue-section h4 {
+/*     .blue-section h4 {
         padding-top: 10px;
         font-size: 12px;
         top: 405px;
@@ -325,7 +325,7 @@ li a:hover{
     .buy-art-btn {
         top: 450px;
         left: 30px;
-    }
+    } */
 }
 
 @media (max-width: 330px) {
