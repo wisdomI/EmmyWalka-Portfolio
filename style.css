@@ -308,6 +308,10 @@ li a:hover{
         left: 60px;
     }
 
+    .blue-section {
+        padding-top: 30px;
+    }
+
     .blue-section h4 {
         padding-top: 10px;
         font-size: 12px;
