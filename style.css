@@ -57,7 +57,7 @@ li a:hover{
 /* Main Home Page Styling */
 .bg-image-section {
     position: absolute;
-    top: 19.4vh;
+    top: 17vh;
     right: 5rem;
 }
 
@@ -219,7 +219,7 @@ li a:hover{
 
 
 /* Media Query */
-@media (max-width: 870px) {
+@media (max-width: 900px) {
     .primary-navigation {
         position: fixed;
         inset: 0 0 0 30%;
@@ -295,7 +295,22 @@ li a:hover{
     }
 
     .blue-section h4 {
+        top: 70%;
         font-size: 12px;
+    }
+
+    .buy-art-btn{
+        top: 75%;
+    }
+}
+
+@media (max-width:815px) {
+    .blue-section h4 {
+        top: 75%;
+    }
+
+    .buy-art-btn{
+        top: 80%;
     }
 }
 
@@ -320,10 +335,12 @@ li a:hover{
     .blue-section h4 {
         padding-top: 10px;
         font-size: 12px;
+        top: 70%;
         left:60px;
     }
 
     .buy-art-btn {
+        top: 75%;
         left: 60px;
     }
 }
@@ -339,10 +356,12 @@ li a:hover{
     }
 
     .blue-section h4 {
+        top: 70%;
         left: 30px;
     }
 
     .buy-art-btn {
+        top: 75%;
         left: 30px;
     }
 }
@@ -359,10 +378,12 @@ li a:hover{
     }
 
     .blue-section h4 {
+        top: 70%;
         left: 20px;
     }
 
     .buy-art-btn {
+        top: 75%;
         left: 20px;
     }
 
