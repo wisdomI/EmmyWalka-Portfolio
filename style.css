@@ -55,6 +55,11 @@ li a:hover{
 }
 
 /* Main Home Page Styling */
+main {
+    padding: 0;
+    margin: 0;
+}
+
 .bg-image-section {
     position: absolute;
     top: 17vh;
@@ -312,10 +317,21 @@ li a:hover{
     .buy-art-btn{
         top: 82%;
     }
+
+    .bg-image-section {
+        top: 21%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bg-image-section {
+        top: 21%;
+    }
 }
 
 @media (max-width: 425px) {
     .bg-image-section {
+        top: 26%;
         right: .5rem;
     }
 
@@ -369,6 +385,7 @@ li a:hover{
 
 @media (max-width: 330px) {
     .bg-image-section {
+        top: 26%;
         right: .3rem;
     }
 
