@@ -250,11 +250,11 @@ main {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(./images/close.png);
+        background-image: url(../images/close.png);
         background-repeat: no-repeat;
     }
     .mobile-nav-toggle[aria-expanded="false"] {
-        background-image: url(./images/Vector.png);
+        background-image: url(../images/Vector.png);
         background-repeat: no-repeat;
     }
 
