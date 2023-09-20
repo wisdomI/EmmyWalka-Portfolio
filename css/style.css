@@ -68,12 +68,13 @@ main {
 
 @media (max-width:1440px) {
     .bg-image-section {
-        top: 17%;
+        top: 19.8%;
     }
 }
 
 .bg-image-section img {
     height: 80vh;
+    
 }
 
 .white-section {
@@ -335,10 +336,10 @@ main {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
     .bg-image-section {
         top: 26%;
-        right: .5rem;
+        right: .1rem;
     }
 
     .white-section h1{
