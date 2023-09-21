@@ -344,9 +344,10 @@ main {
         top: 82%;
     }
 
-    .bg-image-section {
-        top: 21%;
+    .bg-image-section img {
+        right: .1rem;
     }
+
 }
 
 @media (max-width: 1024px) {
@@ -356,7 +357,7 @@ main {
 }
 
 @media (max-width: 550px) {
-    .bg-image-section {
+    .bg-image-section img {
         top: 26%;
         right: .1rem;
     }
@@ -388,8 +389,8 @@ main {
 }
 
 @media (max-width: 375px) {
-    .bg-image-section {
-        right: .5rem;
+    .bg-image-section img{
+        right: .1rem;
     }
 
     .white-section h1{

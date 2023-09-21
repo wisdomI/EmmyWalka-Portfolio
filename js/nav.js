@@ -19,7 +19,10 @@ const activePage = window.location.pathname
 const navLinks = document.querySelectorAll("nav a")
 
 navLinks.forEach(element => {
-    if (element.href.includes(`${activePage}`)) {
+    const navLinkPathname = new URL(element.href).pathname
+
+
+    if (activePage === navLinkPathname) {
         element.classList.add("active")
     }
 });
