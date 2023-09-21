@@ -50,6 +50,15 @@ li a:hover{
     color: #0247CF;
 }
 
+.primary-navigation li a:is(:link, :active, :visited).active {
+    color: white;
+    background: #0247CF;
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
 .primary-navigation a {
     text-decoration: none;
 }
@@ -60,20 +69,25 @@ main {
     margin: 0;
 }
 
-.bg-image-section {
+.bg-image-section img {
     position: absolute;
-    top: 19.4%;
+    top: 22%;
     right: 5rem;
 }
 
-@media (max-width:1440px) {
-    .bg-image-section {
-        top: 19.8%;
+/* @media (max-width:2560px) {
+    .bg-image-section img {
+        top: 19.3%;
     }
-}
+
+    .blue-section {
+        height: 45vh;
+    }
+} */
 
 .bg-image-section img {
     height: 80vh;
+    top: 19.8%;
     
 }
 
@@ -271,6 +285,11 @@ main {
 
     .active a:hover{
         color: #0247CF;
+    }
+
+    .active-tab {
+        color: white;
+        background: #0247CF;
     }
 
     @supports (backdrop-filterblur(1rem)) {
